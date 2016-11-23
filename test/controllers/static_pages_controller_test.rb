@@ -16,4 +16,9 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get toto" do
+    get static_pages_toto_url
+    assert_response :success
+  end
+
 end
